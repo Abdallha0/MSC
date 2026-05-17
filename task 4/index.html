@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+    <style>
+        h2 {
+            color: #036b37;
+            padding: 1rem; /* extra style */
+        }
+
+        .intro {
+            background-color: #119c8a4f;
+        }
+
+        #site-title {
+            font-size: 40px !important;
+            /* Normally, without using "!important," the inline style takes Priority because it has a higher specificity.
+            However, when "!important" with specificity style is used, it takes higher Priority. */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========================================= -->
+    <!-- Header Section ( navbar ) -->
+    <!-- ========================================= -->
+    <header style="background:#119c8a4f">
+        <h1 id="site-title" style="font-size: 36px;">My Website</h1>
+        <nav>
+            <a href="#" style="color: #fff;">Home</a>
+            <a href="#" style="color: #fff;">About</a>
+            <a href="#" style="color: #fff;">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========================================= -->
+        <!-- Intro Section -->
+        <!-- ========================================= -->
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>This is the intro section.</p>
+            <p>It has two paragraphs.</p>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- Topics Section -->
+        <!-- ========================================= -->
+        <section class="topics">
+            <h2>Topics</h2>
+            <p>First topic paragraph.</p>
+            <p>Second topic paragraph.</p>
+        </section>
+    </main>
+    <footer>
+        <h2>Footer Logo</h2>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+</body>
+
+</html>

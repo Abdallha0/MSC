@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zaker Coding School offers hands-on training in web development, UI/UX design, and cybersecurity. Learn from industry experts, explore our weekly schedule, and register for beginner, intermediate, or advanced sessions.">
+    <meta property="og:title" content="Zaker">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaker.com">
+    <meta property="og:image" content="https://zaker.com/images/icon.png">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="Zaker">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <title>Zaker</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        .font-heading {
+            font-family: Space Grotesk, system-ui;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#F7F8F8]">
+    <!-- ============================================================ -->
+    <!-- section 1: Header Section -->
+    <!-- ============================================================ -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#ffffff] border-b border-border">
+        <div class="container mx-auto flex items-center justify-between py-4 px-4">
+            <a href="#home" class="font-heading text-2xl font-bold tracking-widest text-[#206f64]">
+                Zaker
+            </a>
+            <nav class="hidden md:flex gap-8">
+                <a href="#home"
+                    class="font-body text-sm font-medium text-gray-500 hover:text-[#206f64] transition-colors">Home</a>
+                <a href="#video"
+                    class="font-body text-sm font-medium text-gray-500 hover:text-[#206f64] transition-colors">Video</a>
+                <a href="#instructors"
+                    class="font-body text-sm font-medium text-gray-500 hover:text-[#206f64] transition-colors">Instructors</a>
+                <a href="#schedule"
+                    class="font-body text-sm font-medium text-gray-500 hover:text-[#206f64] transition-colors">Schedule</a>
+                <a href="#register"
+                    class="font-body text-sm font-medium text-gray-500 hover:text-[#206f64] transition-colors">Register</a>
+            </nav>
+
+            <button class="md:hidden text-[#131C20]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg></button>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- section 2: Home Section -->
+    <!-- ============================================================ -->
+    <section id="home" class="py-24 md:py-32 bg-[#206f64] text-white text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                ZAKER
+            </h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
+                Your gateway to mastering web development, design, and cybersecurity. Learn from industry experts in a
+                hands-on environment.
+            </p>
+            <a href="#register"
+                class="inline-block bg-[#DF9C2B] text-white font-heading font-semibold px-8 py-3 rounded-xl hover:opacity-90 transition-opacity">
+                Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- section 3: Video Section -->
+    <!-- ============================================================ -->
+    <section id="video" class="py-20 bg-[#EEF1F1]">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#131C20] mb-4">
+                Welcome to Zaker
+            </h2>
+            <p class="text-gray-500 mb-10 max-w-xl mx-auto">
+                Watch our teaser to learn more about what we offer.
+            </p>
+            <div
+                class="max-w-3xl relative mx-auto aspect-video rounded-xl overflow-hidden bg-[#E2E5E6] border border-border flex items-center justify-center">
+                <p class="text-gray-500 text-lg">🎬 Teaser video coming soon</p>
+                <video autoplay loop muted class="w-full h-full object-cover absolute top-0 left-0"
+                    src="./videos/video.mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- section 4: Instructors Section -->
+    <!-- ============================================================ -->
+    <section id="instructors" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#131C20] text-center mb-4">Our Instructors
+            </h2>
+            <p class="text-gray-500 text-center max-w-xl mx-auto mb-14">Learn from industry professionals with
+                real-world expertise.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="./images/mohammed.png" alt="Mohammed Ahmed Mohammed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-semibold text-[#131C20] mb-2">Mohammed Ahmed Mohammed</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">A seasoned web development expert
+                            with over 10 years of experience in building dynamic and interactive websites. He has
+                            trained hundreds of students in front-end and back-end technologies.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">HTML,
+                                CSS, JavaScript</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">React,
+                                Vue.js</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Node.js,
+                                PHP, Python</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">MySQL,
+                                MongoDB</span></div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="./images/noor.png" alt="Noor Mohamed Ahmed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-semibold text-[#131C20] mb-2">Noor Mohamed Ahmed</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">A talented UX/UI designer and
+                            front-end developer with over 8 years of experience. She focuses on enhancing user
+                            experiences through modern design principles and accessible web design.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Figma,
+                                Adobe XD, Sketch</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">HTML,
+                                CSS, JavaScript</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Bootstrap,
+                                Tailwind CSS</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Usability
+                                testing &amp; user research</span></div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="./images/osama.png" alt="Osama Youssif ElSayed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-semibold text-[#131C20] mb-2">Osama Youssif ElSayed</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">A cybersecurity expert and ethical
+                            hacker with over 12 years of experience in protecting organizations from cyber threats.
+                            Dedicated to teaching students how to build secure web applications.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">OWASP,
+                                Penetration Testing</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Network
+                                security &amp; firewalls</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Encryption
+                                &amp; cryptography</span><span
+                                class="text-xs font-medium bg-[#E4F1EF] text-[#206F64] px-3 py-1 rounded-full">Metasploit,
+                                Wireshark, Kali Linux</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- section 5: Schedule Section -->
+    <!-- ============================================================ -->
+    <section id="schedule" class="py-20 bg-[#EEF1F1]">
+        <div class="container mx-auto px-4">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#131C20] text-center mb-4">Lecture Schedule
+            </h2>
+            <p class="text-gray-500 text-center max-w-xl mx-auto mb-10">Our weekly timetable for all sessions.
+            </p>
+            <div class="overflow-x-auto rounded-xl border border-border shadow-sm">
+                <table class="w-full min-w-[900px] text-sm">
+                    <thead>
+                        <tr class="bg-[#206f64] text-white">
+                            <th class="px-4 py-3 text-left font-heading font-semibold">Time</th>
+                            <th class="px-4 py-3 text-left font-heading font-semibold" colspan="1">Monday</th>
+                            <th class="px-4 py-3 text-left font-heading font-semibold" colspan="1">Tuesday</th>
+                            <th class="px-4 py-3 text-left font-heading font-semibold" colspan="1">Wednesday</th>
+                            <th class="px-4 py-3 text-left font-heading font-semibold" colspan="1">Thursday</th>
+                            <th class="px-4 py-3 text-left font-heading font-semibold" colspan="1">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t border-border bg-white">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">8:00 AM – 9:30 AM</td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">HTML &amp; CSS</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Noor Mohamed Ahmed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">JavaScript Basics</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Mohammed Ahmed Mohammed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Cybersecurity Fundamentals</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">UI/UX Design</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Noor Mohamed Ahmed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Advanced Networking</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-t border-border bg-[#EEF1F1]/50">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">9:30 AM – 10:00 AM</td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Lab Session</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                        </tr>
+                        <tr class="border-t border-border bg-white">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">10:00 AM – 11:30 AM</td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">JavaScript DOM</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Mohammed Ahmed Mohammed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Database Management</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Mohammed Ahmed Mohammed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">AI &amp; Machine Learning</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Guest Speaker</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Ethical Hacking</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                        </tr>
+                        <tr class="border-t border-border bg-[#EEF1F1]/50">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">11:30 AM – 1:00 PM</td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Project Work</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Linux for Developers</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Mohammed Ahmed Mohammed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Penetration Testing</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                        </tr>
+                        <tr class="border-t border-border bg-white">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">1:00 PM – 2:00 PM</td>
+                            <td colspan="5" class="px-4 py-3 text-center font-heading font-semibold text-[#DF9C2B]">
+                                Lunch
+                                Break</td>
+                        </tr>
+                        <tr class="border-t border-border bg-[#EEF1F1]/50">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">2:00 PM – 3:30 PM</td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Frontend Frameworks</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Noor Mohamed Ahmed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Networking Basics</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Data Structures</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Mohammed Ahmed Mohammed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">User Research</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Noor Mohamed Ahmed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Cloud Security</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-t border-border bg-white">
+                            <td class="px-4 py-3 font-medium text-[#131C20] whitespace-nowrap">3:30 PM – 5:00 PM</td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Final Project Discussion</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Cyber Law &amp; Ethics</div>
+                                    <div class="text-xs text-gray-500 mt-0.5">Osama Youssif ElSayed</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">AI Applications</div>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3"><span class="text-gray-500/40">—</span></td>
+                            <td class="px-4 py-3">
+                                <div>
+                                    <div class="font-medium text-[#131C20]">Security Audits</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- section 6: Register Section -->
+    <!-- ============================================================ -->
+    <section id="register" class="py-20">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#131C20] text-center mb-4">Registration Form
+            </h2>
+            <p class="text-gray-500 text-center mb-10">Fill out the form below to enroll in our sessions.</p>
+            <form class="bg-white border border-border rounded-xl p-8 shadow-sm space-y-6">
+                <div><label class="block text-sm font-medium text-[#131C20] mb-1">Full Name <span
+                            class="text-destructive">*</span></label><input required="" type="text"
+                        class="w-full rounded-lg border border-input bg-[#F7F8F8] px-4 py-2.5 text-sm text-[#131C20] focus:outline-none focus:ring-2 focus:ring-ring"
+                        value=""></div>
+                <div><label class="block text-sm font-medium text-[#131C20] mb-1">Email Address <span
+                            class="text-destructive">*</span></label><input required="" type="email"
+                        class="w-full rounded-lg border border-input bg-[#F7F8F8] px-4 py-2.5 text-sm text-[#131C20] focus:outline-none focus:ring-2 focus:ring-ring"
+                        value=""></div>
+                <div><label class="block text-sm font-medium text-[#131C20] mb-1">Phone Number <span
+                            class="text-destructive">*</span></label><input required="" type="tel"
+                        class="w-full rounded-lg border border-input bg-[#F7F8F8] px-4 py-2.5 text-sm text-[#131C20] focus:outline-none focus:ring-2 focus:ring-ring"
+                        value=""></div>
+                <div><label class="block text-sm font-medium text-[#131C20] mb-1">Date of Birth <span
+                            class="text-gray-500 text-xs">(Optional)</span></label><input type="date"
+                        class="w-full rounded-lg border border-input bg-[#F7F8F8] px-4 py-2.5 text-sm text-[#131C20] focus:outline-none focus:ring-2 focus:ring-ring"
+                        value=""></div>
+                <fieldset>
+                    <legend class="text-sm font-medium text-[#131C20] mb-2">Choose a Session <span
+                            class="text-destructive">*</span></legend>
+                    <div class="flex gap-6"><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="radio"
+                                name="session" required="" class="accent-[#206f64]"
+                                value="Beginner">Beginner</label><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="radio"
+                                name="session" required="" class="accent-[#206f64]"
+                                value="Intermediate">Intermediate</label><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="radio"
+                                name="session" required="" class="accent-[#206f64]" value="Advanced">Advanced</label>
+                    </div>
+                </fieldset>
+                <div><label class="block text-sm font-medium text-[#131C20] mb-1">Preferred Time <span
+                            class="text-destructive">*</span></label><select required=""
+                        class="w-full rounded-lg border border-input bg-[#F7F8F8] px-4 py-2.5 text-sm text-[#131C20] focus:outline-none focus:ring-2 focus:ring-ring">
+                        <option value="">Select a time</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select></div>
+                <fieldset>
+                    <legend class="text-sm font-medium text-[#131C20] mb-2">Additional Preferences <span
+                            class="text-gray-500 text-xs">(Optional)</span></legend>
+                    <div class="flex gap-6"><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="checkbox"
+                                class="accent-[#206f64]">Lunch</label><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="checkbox"
+                                class="accent-[#206f64]">T-shirt</label><label
+                            class="flex items-center gap-2 text-sm text-[#131C20] cursor-pointer"><input type="checkbox"
+                                class="accent-[#206f64]">Workshop Materials</label></div>
+                </fieldset><button type="submit"
+                    class="w-full bg-[#206f64] text-white font-heading font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity">Submit
+                    Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- section 7: Footer Section -->
+    <!-- ============================================================ -->
+    <footer class="bg-[#131C20] text-white py-8">
+        <div class="container mx-auto px-4 text-center"><span
+                class="font-heading text-xl font-bold tracking-widest animate-pulse">ZAKER</span>
+            <p class="text-sm mt-2 opacity-70">© 2026 Zaker. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

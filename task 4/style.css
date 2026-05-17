@@ -1,0 +1,71 @@
+/* >>>>>>> extra styles <<<<<<<< */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+body {
+    font-family: system-ui;
+    background-color: #119c8a31;
+    color: #025244;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+h1 {
+    color: #02685a;
+}
+
+header nav a {
+    margin: 0 .5rem;
+    text-decoration: none;
+    font-size: medium;
+}
+
+section {
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #95D3CC;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #95D3CC;
+}
+/* ================================== */
+
+/* >>>>>>> Requirements <<<<<<<<  */
+
+main p {
+    color: #025244;
+    padding: 0 1rem;
+    margin-top: .5rem;
+}
+
+.topics>h2 {
+    background-color: #119c8a46;
+    border-radius: 5rem;
+}
+
+.intro h2+p {
+    font-size: 18px
+}
+
+footer h2~p {
+    background-color: #025244;
+    padding: 1px 4px;
+    color: #95D3CC;
+    width: fit-content;
+    border-radius: 3rem;
+    margin: auto;
+}
